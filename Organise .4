@@ -1,0 +1,6 @@
+def scanRecurse(baseDir):
+    for entry in os.scandir(baseDir):
+        if entry.is_file():
+            yield entry
+        else:
+            yield from scanRecurse(entry.path)
