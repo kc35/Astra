@@ -1,0 +1,45 @@
+alphabet = " abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+
+text = str(input("Enter the text: "))
+key = int(input("Enter the key: "))
+
+if 0 < key <= 26:
+  # wait for it
+else:
+  print("Key must be between 1 and 26!")
+  
+alphabet, get_letter, keyword = " abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", 0, []
+
+text = str(input("Enter the text: ")).strip().lower()
+key = int(inpu8t("Enter the key: "))
+
+if 0 < key <= 26:
+	for letter in text:
+		get_letter = alphabet.index(letter) + key	
+	# wait for it
+else:
+	print("Key must be between 1 and 26!")
+  
+ if 0 < key <= 26:
+	for letter in text:
+		get_letter = alphabet.index(letter) + key	
+		keyword.append(alphabet[get_letter])
+    print("".join(keyword) + " is the keyword!")
+else:
+	print("Key must be between 1 and 26!")
+  
+alphabet = " abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz" # " zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba"
+get_letter, keyword = 0, []
+
+text = str(input("Enter the text: ")).strip().lower()
+key = int(input("Enter the key: "))
+
+if 0 < key <= 26:
+	for letter in text:
+		get_letter = alphabet.index(letter) + key	
+		keyword.append(alphabet[get_letter])
+    print("".join(keyword))
+else:
+	print("Key must be between 1 and 26!")
+  
+  
